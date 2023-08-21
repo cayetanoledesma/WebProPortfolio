@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Card con efecto hover - Magtimus</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <a href="../index.html">
+    <button class="boton cinco">
+        <div class="icono">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+            </svg>
+        </div>
+        <span><<</span>
+    </button>
+</a>
+
+    <h1 class="title">Apps Android realizadas con Android Studio y desarrolladas en Kotlin</h1>
+    
+    <div class="containerport">
+       
+        <div class="cardport" id="imagenContainer">
+            <img src="imagen/map1Android.png">
+            <h4>APP DE LOCALIZACIÓN EN MAPA</h4>
+            <p>App mapa utilizando dependencias de localización</p>
+        </br>
+            <a href="https://github.com/cayetanoledesma/MapaCovid">github</a>
+            <div class="icon-container">
+                <img src="imagen/androidIcon.svg" class="icon">
+                <img src="imagen/androidStudioIcon.png" class="icon">
+                <img src="imagen/kotlinIcon.svg" class="icon">
+            </div>
+        </div>
+        <div class="cardport" id="imagenContainer">
+            <img src="imagen/Vengadores.png">
+            <h4>APP RESERVAS RESTAURANTE</h4>
+            <p>App realizada para realizar reservas en restaurantes en tiempo real </p>
+        </br>
+            <a href="https://github.com/2023-AppRestaurante/app-laravel">github</a>
+            <div class="icon-container">
+                <img src="imagen/androidIcon.svg" class="icon">
+                <img src="imagen/androidStudioIcon.png" class="icon">
+                <img src="imagen/kotlinIcon.svg" class="icon">
+            </div>
+        </div>       
+        <div class="cardport" id="imagenContainer">
+            <img src="imagen/gatos.png">
+            <h4>APP GATOS MVVM CON API</h4>
+            <p>App diseñada en MVVM que muestra datos de una Api de gatos eligiendo a favoritos</p>
+            <a href="https://github.com/cayetanoledesma/GatosMVVM">github</a>
+            <div class="icon-container">
+                <img src="imagen/androidIcon.svg" class="icon">
+                <img src="imagen/androidStudioIcon.png" class="icon">
+                <img src="imagen/kotlinIcon.svg" class="icon">
+            </div>
+        </div>
+        <div class="cardport" id="imagenContainer">
+            <img src="imagen/perros.png">
+            <h4>APP DE RESULTADOS DE FUTBOL</h4>
+            <p> App realizada con Anfroid Studio y desarrollada en Kotlin, usando la Api <a href="https://www.football-data.org/">fotbal-data</p>
+            <a href="https://github.com/cayetanoledesma/AppFootball.git">github</a>
+            <div class="icon-container">
+                <img src="imagen/androidIcon.svg" class="icon">
+                <img src="imagen/androidStudioIcon.png" class="icon">
+                <img src="imagen/kotlinIcon.svg" class="icon">
+            </div>
+        </div>
+        <div class="cardport" id="imagenContainer">
+            <img src="imagen/agenda3Android.png">
+            <h4>APP AGENDA</h4>
+            <p>App para almacenar contactos haciendo uso de la librería Room para trabajar con
+                bases de datos</p>
+            <a href="https://github.com/cayetanoledesma/MyAgenda">github</a>
+            <div class="icon-container">
+                <img src="imagen/androidIcon.svg" class="icon">
+                <img src="imagen/androidStudioIcon.png" class="icon">
+                <img src="imagen/kotlinIcon.svg" class="icon">
+            </div>
+        </div>
+        <div class="cardport" id="imagenContainer">
+            <img src="imagen/conversor.png">
+            <h4>APP COVERSOR DE MEDIDAS</h4>
+            <p>App de conversor de medidas muy facil de utilizar donde muestra longitud, medida y temperatura </p>
+            <a href="https://github.com/cayetanoledesma/converter_spinner">github</a>
+            <div class="icon-container">
+                <img src="imagen/androidIcon.svg" class="icon">
+                <img src="imagen/androidStudioIcon.png" class="icon">
+                <img src="imagen/kotlinIcon.svg" class="icon">
+            </div>
+        </div>
+        
+        
+        <div class="cardport" id="imagenContainer">
+            <img src="imagen/Vengadores.png">
+            <h4>INTERFACES</h4>
+            <p>Diseño de interfaces para practicar</p>
+        </br>
+            <a href="https://github.com/cayetanoledesma/ejercicio5">github</a>
+            <div class="icon-container">
+                <img src="imagen/androidIcon.svg" class="icon">
+                <img src="imagen/androidStudioIcon.png" class="icon">
+            </div>
+        </div>
+        
+        
+    </div>
+    
+
+
+<script>
+const cards = document.querySelectorAll(".cardport");
+const imagenesPorCard = [
+    // Define las imágenes y sus tamaños para cada card aquí
+    [
+    { src: "imagen/mapaandroid.png", width: "450px", height: "720px" },
+    { src: "imagen/mapaandroid1.png", width: "450px", height: "720px" }
+     
+    ],
+    [
+   
+        { src: "imagen/login.png", width: "400px", height: "720px" },
+        { src: "imagen/bienvenida.png", width: "400px", height: "720px" },
+        { src: "imagen/principal.png", width: "400px", height: "720px" },
+        { src: "imagen/filtros.png", width: "400px", height: "720px" },
+        { src: "imagen/detalle.png", width: "400px", height: "720px" },
+        { src: "imagen/filtroMapa.png", width: "400px", height: "720px" },
+        { src: "imagen/mapa.png", width: "400px", height: "720px" },
+        { src: "imagen/reserva.png", width: "400px", height: "720px" },
+        { src: "imagen/opiniones.png", width: "400px", height: "720px" },
+        { src: "imagen/reservaPendiente.png", width: "400px", height: "720px" }
+],
+    
+    [
+        { src: "imagen/gato1.png", width: "450px", height: "720px" },
+        { src: "imagen/gato.png", width: "400px", height: "720px" },   
+        { src: "imagen/gato2.png", width: "400px", height: "720px" }
+       
+    ],
+    [
+   
+        { src: "imagen/futbol2.png", width: "400px", height: "720px" },
+        { src: "imagen/futbol.png", width: "400px", height: "720px" },
+        { src: "imagen/futbol1.png", width: "400px", height: "720px" }
+    ],
+   
+    [
+       
+        { src: "imagen/agenda2.png", width: "400px", height: "720px" },
+        { src: "imagen/agenda.png", width: "400px", height: "720px" },
+        { src: "imagen/agenda1.png", width: "400px", height: "720px" }  
+       
+    ],
+    [
+   
+        { src: "imagen/convertir.png", width: "400px", height: "720px" },
+        { src: "imagen/covertir1.png", width: "400px", height: "720px" },
+        { src: "imagen/convertir2.png", width: "400px", height: "720px" }
+],
+    
+    [
+   
+        { src: "imagen/pantalla.png", width: "100%", height: "720px" },
+        { src: "imagen/pantalla1.png", width: "100%", height: "720px" },
+        { src: "imagen/pantalla3.png", width: "100%", height: "720px" },
+        { src: "imagen/pantallapng.png", width: "450px", height: "720px" }
+],
+    
+];
+let imagenActualPorCard = new Array(cards.length).fill(0);
+
+cards.forEach((card, index) => {
+    const img = card.querySelector("img");
+
+    function actualizarImagen() {
+        const windowWidth = window.innerWidth;
+        const imagenes = imagenesPorCard[index];
+
+        const imagenActual = imagenActualPorCard[index];
+        img.style.width = windowWidth <= 600 ? "100%" : imagenes[imagenActual].width;
+        img.style.height = windowWidth <= 600 ? "auto" : imagenes[imagenActual].height;
+        img.src = imagenes[imagenActual].src;
+    }
+
+    card.addEventListener("click", () => {
+        imagenActualPorCard[index] = (imagenActualPorCard[index] + 1) % imagenesPorCard[index].length;
+        actualizarImagen();
+    });
+
+    window.addEventListener("load", actualizarImagen);
+    window.addEventListener("resize", actualizarImagen);
+});
+
+
+</script>
+    
+        
+
+
+    
+    <script src="main.js"></script>
+    
+</body>
+</html>
+
+
+
+
+

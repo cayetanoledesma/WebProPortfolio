@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card con efecto hover - Magtimus</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <a href="../index.html">
+    <button class="boton cinco">
+        <div class="icono">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+            </svg>
+        </div>
+        <span><<</span>
+    </button>
+</a>
+
+    <h1 class="title">Investigación y análisis realizados en varios proyectos </br> basándome en la USABILIDAD, </h1>
+    
+    <div class="containerport">
+       
+        <div class="cardport"  id="imagenContainer">
+            <img src="imagen/diseño1.png">
+            <h4>APP WEB REDFHARMA</h4>
+            <p>Investigación y análisis para crear una web de gestión de farmacias</p>
+        </br>
+            <a href="../Proyecto web (1).pdf">Leer más</a>
+        </div>
+        
+        <div class="cardport"  id="imagenContainer">
+            <img src="imagen/.png">
+            <h4>APP WEB/MOVIL FREESITES</h4>
+            <p>Investigación y análisis para crear un App Web y Móvil de reservas en restaurantes</p> 
+            <a href="../Plan de Marketing Analitico de la App (2).pdf">leer más</a>
+        </div>
+
+        <div class="cardport"  id="imagenContainer">
+            <img src="imagen/diseño4.png">
+            <h4>APP CUIDALOS</h4>
+            <p>Proceso de investigación y análisis para crear una App Social, de ayuda a las personas mayores</p>
+            <a href="../Proyecto App Social (1).pdf">Leer más</a>
+        </div>
+        
+        <div class="cardport"  id="imagenContainer">
+            <img src="imagen/diseño5.png">
+            <h4>ANÁLISIS DE USABILIDAD</h4>
+            <p>Trabajo de análisis de usabilidad de una web escogida al azar</p>
+        </br>
+            <a href="../usabilidad web (1).pdf">Leer más</a>
+        </div>
+       
+        
+    </div>
+
+    <script>
+        const cards = document.querySelectorAll(".cardport");
+        const imagenesPorCard = [
+            // Define las imágenes y sus tamaños para cada card aquí
+            [
+               
+                { src: "imagen/diseño3.png", width: "100%", height: "750px" }
+                                  
+            ],
+            [                         
+                { src: "imagen/marketiong.png", width: "150%", height: "750px" },
+                { src: "imagen/freesites1.png", width: "100%", height: "750px" },
+                { src: "imagen/freesites2.png", width: "100%", height: "750px" },
+                { src: "imagen/freesites3.png", width: "100%", height: "750px" },
+                { src: "imagen/freesites4.png", width: "100%", height: "750px" },
+                { src: "imagen/freesites5.png", width: "100%", height: "750px" },
+                { src: "imagen/freesites6.png", width: "100%", height: "750px" },
+                { src: "imagen/freesites7.png", width: "100%", height: "750px" },
+                { src: "imagen/freesites8.png", width: "100%", height: "750px" },
+                { src: "imagen/freesites9.png", width: "100%", height: "750px" }              
+
+            ],
+            [
+                
+                { src: "imagen/diseño4.png", width: "100%", height: "750px" }          
+            ],
+            [
+                
+                { src: "imagen/diseño5.png", width: "100%", height: "750px" }          
+            ],
+           
+           
+         
+         
+            // Repite lo mismo para los demás cards
+        ];
+        let imagenActualPorCard = new Array(cards.length).fill(0);
+        
+        cards.forEach((card, index) => {
+            const img = card.querySelector("img");
+        
+            function actualizarImagen() {
+                const windowWidth = window.innerWidth;
+                const imagenes = imagenesPorCard[index];
+        
+                const imagenActual = imagenActualPorCard[index];
+                img.style.width = windowWidth <= 600 ? "100%" : imagenes[imagenActual].width;
+                img.style.height = windowWidth <= 600 ? "auto" : imagenes[imagenActual].height;
+                img.src = imagenes[imagenActual].src;
+            }
+        
+            card.addEventListener("click", () => {
+                imagenActualPorCard[index] = (imagenActualPorCard[index] + 1) % imagenesPorCard[index].length;
+                actualizarImagen();
+            });
+        
+            window.addEventListener("load", actualizarImagen);
+            window.addEventListener("resize", actualizarImagen);
+        });
+        
+        
+        </script>
+
+    
+        
+<script src="main.js"></script>
+    
+        
+    
+
+    
+   
+    
+</body>
+</html>
+
+
+
+
+

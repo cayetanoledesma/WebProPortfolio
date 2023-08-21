@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card con efecto hover - Magtimus</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <a href="../index.html">
+    <button class="boton cinco">
+        <div class="icono">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+            </svg>
+        </div>
+        <span><<</span>
+    </button>
+</a>
+
+    <h1 class="title">Juego realizado en Unity</h1>
+    
+    <div class="containerport1">
+       
+        <div class="cardport1" id="imagenContainer1">
+            <img src="imagen/Startfighter1png.png">
+            <h4>JUEGO STARFIGHTER</h4>
+            <p> Juego básico de Starfighter realizado con Unity y desarrollado en C++. </p>
+                </p>
+            <a href="https://github.com/cayetanoledesma/Starfighter_Unity">github</a>
+            <div class="icon-container">
+                <img src="imagen/c+.png" class="icon">
+                <img src="imagen/unity.svg" class="icon">
+                
+            </div>
+        </div>
+       
+        
+        
+      
+    </div>
+    <script>
+        const cards = document.querySelectorAll(".cardport1");
+        const imagenesPorCard = [
+            // Define las imágenes y sus tamaños para cada card aquí
+            [
+            { src: "imagen/Startfighter1png.png", width: "100%", height: "700px" },           
+            { src: "imagen/unity5.png", width: "100%", height: "700px" },
+            { src: "imagen/unity7.png", width: "100%", height: "700px" },
+            { src: "imagen/unity8.png", width: "100%", height: "700px" },
+            { src: "imagen/unity9.png", width: "100%", height: "700px" },
+            { src: "imagen/unity10.png", width: "100%", height: "700px" },
+            { src: "imagen/unity11.png", width: "100%", height: "700px" },
+            { src: "imagen/unity0.png", width: "100%", height: "700px" },
+            { src: "imagen/unity1.png", width: "100%", height: "700px" },
+            { src: "imagen/unity2.png", width: "100%", height: "700px" },
+            { src: "imagen/unity4.png", width: "100%", height: "700px" },
+            { src: "imagen/unity6.png", width: "100%", height: "700px" }
+           
+            
+            ],
+           
+        ];
+        let imagenActualPorCard = new Array(cards.length).fill(0);
+        
+        cards.forEach((card, index) => {
+            const img = card.querySelector("img");
+        
+            function actualizarImagen() {
+                const windowWidth = window.innerWidth;
+                const imagenes = imagenesPorCard[index];
+        
+                const imagenActual = imagenActualPorCard[index];
+                img.style.width = windowWidth <= 600 ? "100%" : imagenes[imagenActual].width;
+                img.style.height = windowWidth <= 600 ? "auto" : imagenes[imagenActual].height;
+                img.src = imagenes[imagenActual].src;
+            }
+        
+            card.addEventListener("click", () => {
+                imagenActualPorCard[index] = (imagenActualPorCard[index] + 1) % imagenesPorCard[index].length;
+                actualizarImagen();
+            });
+        
+            window.addEventListener("load", actualizarImagen);
+            window.addEventListener("resize", actualizarImagen);
+        });
+        
+        
+        </script>
+            
+ 
+
+    
+        
+    
+
+    
+   
+    
+</body>
+</html>
+
+
+
+
+

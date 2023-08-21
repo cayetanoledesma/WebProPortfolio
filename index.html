@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <a href="#inicio" onclick="seleccionar()">
+                <div class="logo">
+                    <img src="img/caye.png" >
+                </div>
+            </a>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#porfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">EXPERIENCIA</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">FORMACION</a></li>
+                    <li><a href="#pie" onclick="seleccionar()">CONTACTO</a></li>
+                    <a href="img/CVCayetano.pdf" class="boton-descargar" target="_blank">Descargar CV</a>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--SECCIÓN INICIO -->
+
+    <section id="inicio" class="inicio">
+        <main class="main">
+            <div class="logo1">
+                <img src="img/cayetano.png">
+            </div>
+            <div class="info-content">
+                <h3 class="nombre">Mi nombre es</h3><br/>
+                <h2><span class="nombre1">Cayetano Ledesma Palomares</span></h2><br/>
+                
+                <h3 class="profesion">Web Design | IOS Developer | Android Developer | Software Developer</h3><br/>
+                <div class='console-container'><span id='text'></span>
+                    <div class='console-underscore' id='console'>&#95;</div>
+                </div>
+            </div>  
+            
+        </main>
+    </section>
+
+    <!--SECCIÓN PORTFOLIO -->
+
+    <section class="portfolio" id="porfolio">
+        <h2 class="titulo-seccion">Portfolio</h2>
+        
+        <div class="container">
+
+
+            
+            <a href="trabajos/uno.html">
+                <div class="card">
+                    <img src="img/android.png">
+                </div>
+            </a>   
+
+            <a href="trabajos/cinco.html">
+                <div class="card">
+                    <img src="img/web.jpg">               
+                </div>
+            </a>   
+
+            <a href="trabajos/dos.html">
+                <div class="card">
+                    <img src="img/ios.jpg">               
+                </div>
+            </a>
+
+            <a href="trabajos/cuatro.html">
+                <div class="card">
+                    <img src="img/UIUX.jpg">                                                   
+                </div>
+            </a>
+
+            <a href="trabajos/tres.html">
+                <div class="card">
+                    <img src="img/Unity.jpg">
+                </div>
+            </a>
+
+            <a href="trabajos/seis.html">
+                <div class="card">
+                    <img src="img/figma.png">              
+                </div>
+            </a> 
+
+        </div>
+    </section>
+    <section id="lenguajes" class="lenguajes">
+        <div class="contenido-seccion">
+            <h2>Lenguajes y tecnologías que uso...</h2>
+           
+
+            <div class="fila">              
+                <div class="col">                 
+                    <div class="contenedor-intereses">
+                        <div class="interess" data-nombre="HTML">
+                            <i class="fa-brands fa-html5" style="color: #f53d0f;"></i>                           
+                        </div>
+                        <div class="interess" data-nombre="CSS">
+                            <i class="fa-brands fa-css3-alt" style="color: #7092cd;"></i>
+                        </div>
+                        <div class="interess" data-nombre="JAVASCRIPT">
+                            <i class="fa-brands fa-square-js" style="color: #c7dc2e;"></i>
+                        </div>                   
+                        <div class="interess" data-nombre="PHP">
+                            <i class="fa-brands fa-php" style="color: #80a9ea;"></i>
+                        </div>
+                        <div class="interess" data-nombre="SWIFT">
+                            <i class="fa-brands fa-swift" style="color: #f20707;"></i>
+                        </div>
+                        <div class="interess" data-nombre="KOTLIN">
+                            <img src="img/kotlinIcon.svg" class="imagen-pequena">
+                        </div>
+                        <div class="interess" data-nombre="LARAVEL">
+                            <i class="fa-brands fa-laravel" style="color: #f41e06;"></i>
+                        </div>
+                        <div class="interess" data-nombre="VUE js"></i>
+                            <i class="fa-brands fa-vuejs" style="color: #57a324;"></i>
+                        </div>
+                        <div class="interess" data-nombre="UNITY">
+                            <img src="img/unity.svg" class="imagen-pequena">
+                        </div>                   
+                        <div class="interess" data-nombre="ADOBE">
+                            <img src="img/adobe.svg" class="imagen-pequena">
+                        </div>
+                        <div class="interess" data-nombre="VISUAL_STUDIO">
+                            <img src="img/visual.svg" class="imagen-pequena">
+                        </div>
+                        <div class="interess" data-nombre="FIGMA">
+                            <img src="img/figma.svg" class="imagen-pequena">
+                        </div>
+                        <div class="interess" data-nombre="WORDPRESS">
+                            <i class="fa-brands fa-wordpress" style="color: #4268a9;"></i>
+                        </div>
+                        <div class="interess" data-nombre="ANGULAR">
+                            <i class="fa-brands fa-angular" style="color: #f55019;"></i>
+                        </div>
+                        <div class="interess" data-nombre="ILUSTRATOR">
+                            <img src="img/ai.svg" class="imagen-pequena">
+                        </div>
+                        <div class="interess" data-nombre="TYPESCRIPT">
+                            <img src="img/typescript.svg" class="imagen-pequena">
+                        </div>
+                        <div class="interess" data-nombre="SQL">
+                            <img src="img/sql.svg" class="imagen-pequena">
+                        </div>
+                        <div class="interess" data-nombre="BOOTSTRAP">
+                            <img src="img/bootstrap.svg" class="imagen-pequena">
+                        </div>
+                        <div class="interess" data-nombre="TAILWIND">
+                            <img src="img/tailwind.svg" class="imagen-pequena">
+                        </div>
+                        <div class="interess" data-nombre="XCODE">
+                            <img src="img/xcode.svg" class="imagen-pequena">
+                        </div>
+                        <div class="interess" data-nombre="ANDROIDSTUDIO">
+                            <img src="img/androidIcon.svg" class="imagen-pequena">
+                        </div>
+                        <div class="interess" data-nombre="MySQL">
+                            <img src="img/mysql.svg" class="imagen-pequena">
+                        </div>
+                        <div class="interess" data-nombre="GIT">
+                            <img src="img/git.svg" class="imagen-pequena">
+                        </div>                       
+                        <div class="interess" data-nombre="GITHUB">
+                            <img src="img/githubb.svg" class="imagen-pequena">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <p>"A lo largo de los años, mi insaciable sed de conocimiento ha sido mi compañera constante.</br></br> Desde los primeros pasos que di en la creación de sitios web en Wordpress, siempre he sentido una profunda fascinación por el acto de aprender constantemente y la emoción de abordar nuevas áreas. HTML y CSS, PHP y Javascript, Kotlin y Swift, y así podría continuar. </br></br><span class="pregunta">¡Soy un alma inquieta por naturaleza!</span></br></br>
+
+                        Sin embargo, esta búsqueda incansable también ha tenido su impacto. Me encuentro en un cruce de caminos, cuestionándome si debería elegir una especialización. He explorado los misterios del Front-End,me he sumergido en el Back-End y he construido aplicaciones móviles desde cero. Pero surge una pregunta:<span class="pregunta">¿realmente debo comprometerme con una sola senda?</span> </br> En un mundo tan diverso y cambiante, me debato entre la elección de centrarme o abrazar la variedad."</p>
+                </div>
+            </div>          
+        </div>
+    </section>
+
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Un poco más sobre mí...</h2>
+            <p>"Tengo más de 20 años de experiencia en el sector del comercio como jefe de ventas, experimentado y versátil en una gran empresa. Mi objetivo es fusionar mi experiencia comercial con el sector digital.</br></br>Soy un gran defensor del desarrollo ágil y la metodología Scrum. Me gustaría seguir creciendo en mi carrera y trabajar en proyectos desafiantes para poder ofrecer soluciones de calidad a clientes y empleadores."</p>
+
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            618 799 536
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            cayelepa2@gmail.com
+                        </li>
+                        <li>
+                            <strong>Localidad</strong>
+                            Linares (Jaén)
+                        </li>
+                        <li>
+                            <strong>Profesión</strong>
+                            Desarrollador Multiplataforma
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>                   
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </section>
+    <section id="curriculum"  class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Trayectoria profesional</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <div class="item izq">
+                        <div class="seccion">
+                            <h2 class="puesto">DESARROLLADOR FRONT-END</h2>
+                            <div class="logo-empresa">
+                                <img src="img/Olibyte.png" alt="Logo de la empresa">                                   
+                            </div>  
+                        </br>   
+                            <p class="empresa">Olybyte S.L</p>                     
+                        </div>
+                        <hr class="linea-separacion">
+                        
+                        <div class="seccion">
+                            <h3>Duración</h3>
+                            <p>Marzo 2023 - Junio 2023</p>
+                        </div>
+                        <hr class="linea-separacion">
+                        
+                        <div class="seccion">
+                            <h3>Descripción</h3>
+                            <p>He trabajado con tecnologías como Angular e Ionic, contribuyendo al desarrollo de aplicaciones web y móviles altamente funcionales</p>
+                        </div>
+                        <hr class="linea-separacion">
+                        
+                        <div class="seccion">
+                            <h3>Funciones</h3>
+                            <ul class="funciones">
+                                <li><i class="fas fa-check amarillo"></i> Diseño y creación de prototipado con Figma</li>
+                                <li><i class="fas fa-check amarillo"></i> Desarrollo de interfaces de usuario con Angular</li>
+                                <li><i class="fas fa-check amarillo"></i> Diseño y optimización de componentes en Ionic</li>
+                                <li><i class="fas fa-check amarillo"></i> Integración de servicios RESTful y APIs externas</li>
+                            </ul>
+                        </div>                       
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <div class="seccion">
+                            <h2 class="puesto">DOCENTE</h2>
+                            <div class="logo-empresa">
+                                <img src="img/atm.png" class="atm" alt="Logo de la empresa">                                   
+                            </div>
+                        </br> 
+                            <p class="empresa">Centro educatico</p>                         
+                        </div>
+                        <hr class="linea-separacion">
+                        
+                        <div class="seccion">
+                            <h3>Duración</h3>
+                            <p>Enero 2022 - Julio 2022</p>
+                        </div>
+                        <hr class="linea-separacion">
+                        
+                        <div class="seccion">
+                            <h3>Descripción</h3>
+                            <p> He impartido conocimientos fundamentales y estrategias avanzadas en campañas publicitarias, así como en la exploración de nuevas plataformas de marketing digital y redes sociales</p>
+                        </div>
+                        <hr class="linea-separacion">
+                        
+                        <div class="seccion">
+                            <h3>Funciones</h3>
+                            <ul class="funciones">
+                                <li><i class="fas fa-check amarillo"></i> Enseñar estrategias de marketing y análisis de mercado.</li>
+                                <li><i class="fas fa-check amarillo"></i> Guiar en la creación de campañas publicitarias efectivas.</li>
+                                <li><i class="fas fa-check amarillo"></i> Desarrollar habilidades en redes sociales y marketing digital.</li>
+                                <li><i class="fas fa-check amarillo"></i> Fomentar la creatividad y el pensamiento estratégico en branding.</li>
+                            </ul>
+                        </div>                       
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>               
+                <div class="col derecha">
+                    <h3></h3>                                   
+                    <div class="item der">
+                        <div class="seccion">
+                            <h2 class="puesto">DOCENTE</h2>
+                            <div class="logo-empresa">
+                                <img src="img/CruzRoja.png" class="cruz" >                                  
+                            </div>   
+                        </br>  
+                            <p class="empresa">Cruz Roja</p>                     
+                        </div>
+                        <hr class="linea-separacion">
+                        
+                        <div class="seccion">
+                            <h3>Duración</h3>
+                            <p>Julio 2022 - Noviembre 2022</p>
+                        </div>
+                        <hr class="linea-separacion">
+                        
+                        <div class="seccion">
+                            <h3>Descripción</h3>
+                            <p>He impartido conocimientos y habilidades fundamentales en el ámbito de la Gestión Empresarial y la Atención al Cliente</p>
+                        </div>
+                        <hr class="linea-separacion">
+                        
+                        <div class="seccion">
+                            <h3>Funciones</h3>
+                            <ul class="funciones">
+                                <li><i class="fas fa-check amarillo"></i> Impartir conocimientos estratégicos en gestión empresarial.</li>
+                                <li><i class="fas fa-check amarillo"></i> Desarrollar habilidades de atención al cliente y comunicación</li>
+                                <li><i class="fas fa-check amarillo"></i> Diseñar programas educativos dinámicos y prácticos.</li>
+                                <li><i class="fas fa-check amarillo"></i> Fomentar el pensamiento crítico y resolución de problemas</li>
+                            </ul>
+                        </div>      
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                        
+                    </div> 
+                    <div class="item der">
+                        <div class="seccion">
+                            <h2 class="puesto">GERENTE DE VENTAS</h2>
+                            <div class="logo-empresa"> 
+                                <img src="img/eci.png" class="eci">                                                               
+                            </div>  
+                        </br>                           
+                            <p class="empresa">El Corte Inglés</p>                       
+                        </div>
+                        <hr class="linea-separacion">
+                        
+                        <div class="seccion">
+                            <h3>Duración</h3>
+                            <p>Marzo 2005 - Marzo 2021</p>
+                        </div>
+                        <hr class="linea-separacion">
+                        
+                        <div class="seccion">
+                            <h3>Descripción</h3>
+                            <p> He liderado equipos de personas en El Corte Inglés con un enfoque en el logro de resultados sobresalientes y la satisfacción del cliente a la vez de supervisar y coordinar las operaciones de ventas, optimizando la eficiencia y la productividad del equipo</p>
+                        </div>
+                        <hr class="linea-separacion">
+                        
+                        <div class="seccion">
+                            <h3>Funciones</h3>
+                            <ul class="funciones">
+                                <li><i class="fas fa-check amarillo"></i> Liderar equipos para alcanzar metas de ventas.</li>
+                                <li><i class="fas fa-check amarillo"></i> Desarrollar estrategias de crecimiento de ingresos.</li>
+                                <li><i class="fas fa-check amarillo"></i> Garantizar la satisfacción del cliente y servicio excepcional.</li>
+                                <li><i class="fas fa-check amarillo"></i> Colaborar en la gestión de operaciones y eficiencia.</li>
+                            </ul>
+                        </div>      
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>                          
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Formación académica</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="item">
+                        <img src="img/ESTECH.png" class="logoEscuela"alt="Logo de la empresa">
+                        <p class="estudios">Técnico de Grado Superior en Desarrollo de Aplicaciones Multiplataforma en la escuela de tecnologías ES[Tech] | 2023</p>
+                    </div>
+               
+                </div> 
+                <div class="col">
+                    <div class="item">
+                        <img src="img/jaen.png" class="logoUni" alt="Logo de la empresa">
+                        <p class="estudios">Diplomatura en Relaciones Laborales por la Universidad de Jaén | 2003</p>
+                    </div>   
+               
+                </div>
+                <div class="col">
+                    <div class="item">
+                        <img src="img/open.png" class="logoOpen" alt="Logo de la empresa">
+                        <p class="estudios">Licencias y certificados de javaScript y Base de datos por Openwebinars | 2021</p>
+                    </div>   
+               
+                </div>           
+               
+                
+            </div>
+            <div class="imagen-con-parrafo">
+                <img src="img/open.png" class="openwebinar">
+                <p>Curso de creación y administración de bases de datos SQL</p>
+            </div>
+            <div class="imagen-con-parrafo">
+                <img src="img/open.png" class="openwebinar">
+                <p>Curso de experto en Base de datos</p>
+            </div>
+            <div class="imagen-con-parrafo">
+                <img src="img/open.png" class="openwebinar">
+                <p>Curso de JavaScript en WordPress</p>
+            </div>
+            <div class="imagen-con-parrafo">
+                <img src="img/open.png" class="openwebinar">
+                <p>Curso de manejando la caché en WordPress</p>
+            </div>
+            <div class="imagen-con-parrafo">
+                <img src="img/open.png" class="openwebinar">
+                <p>Curso administración de sitios Web con WordPress de forma profesional</p>
+            </div>
+            <div class="imagen-con-parrafo">
+                <img src="img/open.png" class="openwebinar">
+                <p>Curso de PHP: Ampliando conceptos</p>
+            </div>
+           
+           
+            
+        </div>
+        
+    </section>
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <p id="pie">"Los nativos de Silicon Valley aprendieron<br/> hace mucho tiempo que cuando compartes conocimiento con alguien, uno más uno normalmente equivale a tres"</p>
+        <div class="redes">
+            <span class="correo">cayelepa@gmail.com</span>
+            <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/cayetanoledesma"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="nombre-ano">
+            <p>Cayetano Ledesma &copy; 2023</p>
+        </div>
+    </footer>
+   
+
+
+   
+    
+
+
+
+    
+  
+    <script src="script.js"></script> 
+
+</body>
+</html>

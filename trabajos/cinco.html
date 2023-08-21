@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto de página Web</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <a href="../index.html">
+    <button class="boton cinco">
+        <div class="icono">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+            </svg>
+        </div>
+        <span><<</span>
+    </button>
+</a>
+
+    <h1 class="title">Proyectos de páginas Web </h1>
+    
+    <div class="containerport">
+       
+        <div class="cardport"  id="imagenContainer">
+            <img src="imagen/portfolio.png">
+            <h4>WEB PERSONAL</h4>
+            <p>Portfolio profesional Web realizado con Visual Studio Code utilizando HTML, CSS y JavaScript</p>
+            <a href="">github</a>
+            <div class="icon-container">
+                <img src="imagen/html.svg" class="icon">
+                <img src="imagen/css3.svg" class="icon">
+                <img src="imagen/js.svg" class="icon">
+                <img src="imagen/visual-studio-code-logo-svgrepo-com.svg" class="icon">
+             
+                
+            </div>
+        </div>
+
+          <div class="cardport"  id="imagenContainer">
+            <img src="imagen/webFreesitepng.png">
+            <h4>WEB FREESITES</h4>
+            <p>Web diseñada y creada con el fin de gestionar las reservas de un restaurante, desarrollada en Laravel 10</p>
+            <a href="https://github.com/2023-AppRestaurante/app-laravel">github</a>
+            <div class="icon-container">
+                <img src="imagen/html.svg" class="icon">
+                <img src="imagen/css3.svg" class="icon">
+                <img src="imagen/js.svg" class="icon">
+                <img src="imagen/visual-studio-code-logo-svgrepo-com.svg" class="icon">
+                <img src="imagen/bootstrap.svg" class="icon">
+                <img src="imagen/tailwind.svg" class="icon">
+                <img src="imagen/php.svg" class="icon">
+                <img src="imagen/laravel.svg" class="icon">
+            </div>
+        </div>
+        <div class="cardport"  id="imagenContainer">
+            <img src="imagen/portfolio.png">
+            <h4>WEB FARMACIA HILADOS</h4>
+            <p>Web realiza en WordPress para una farmacia.
+                Actualmente se encuentra a la espera de un rework debido a modificaciones</p>
+            </br>
+           
+            <div class="icon-container">
+                <img src="imagen/word.svg" class="icon">
+                <img src="imagen/ilustrator.svg" class="icon">
+                <img src="imagen/css3.svg" class="icon">                             
+            </div>
+        </div>
+       
+        <div class="cardport"  id="imagenContainer">
+            <img src="imagen/WEB1.png">
+            <h4>WEB REDFHARMA</h4>
+            <p>Web diseñada y creada con el fin de ofertar gestión a farmacias utilizando HTML, CSS, JavaScript, Bootstrap5</p>
+            <a href="https://github.com/cayetanoledesma/web/tree/master">github</a>
+            <div class="icon-container">
+                <img src="imagen/html.svg" class="icon">
+                <img src="imagen/css3.svg" class="icon">
+                <img src="imagen/js.svg" class="icon">
+                <img src="imagen/visual-studio-code-logo-svgrepo-com.svg" class="icon">
+                <img src="imagen/bootstrap.svg" class="icon">
+                
+            </div>
+        </div>
+        <div class="cardport"  id="imagenContainer">
+            <img src="imagen/portfolio.png">
+            <h4>WEB PERSONAL</h4>
+            <p>Portfolio profesional Web realizado con Visual Studio Code utilizando HTML, CSS, JavaScript, Bootstrap5</p>
+            <a href="https://github.com/cayetanoledesma/CV">github</a>
+            <div class="icon-container">
+                <img src="imagen/html.svg" class="icon">
+                <img src="imagen/css3.svg" class="icon">
+                <img src="imagen/js.svg" class="icon">
+                <img src="imagen/visual-studio-code-logo-svgrepo-com.svg" class="icon">
+                <img src="imagen/bootstrap.svg" class="icon">
+                
+            </div>
+        </div>              
+    </div>
+
+    <script>
+        const cards = document.querySelectorAll(".cardport");
+        const imagenesPorCard = [
+            // Define las imágenes y sus tamaños para cada card aquí
+            [
+            { src: "imagen/portfolio5.png", width: "100%", height: "720px" },
+                { src: "imagen/portfolio6.png", width: "100%", height: "720px" },
+                { src: "imagen/portfolio7.png", width: "100%", height: "720px" },
+                { src: "imagen/portfolio8.png", width: "100%", height: "720px" },
+                { src: "imagen/portfolio9.png", width: "100%", height: "720px" },
+                { src: "imagen/portfolio10.png", width: "100%", height: "720px" },
+                { src: "imagen/portfolio11.png", width: "100%", height: "720px" },
+                { src: "imagen/portfolio12.png", width: "100%", height: "720px" }
+           
+           
+            ],
+            [
+                              
+                { src: "imagen/landing.png", width: "100%", height: "720px" },
+                { src: "imagen/fre.png", width: "100%", height: "720px" },
+                { src: "imagen/fre1.png", width: "100%", height: "720px" },
+                { src: "imagen/fre2.png", width: "100%", height: "720px" },
+                { src: "imagen/fre3.png", width: "100%", height: "720px"} 
+
+            ],
+            [
+           
+           { src: "imagen/hilados1.png", width: "100%", height: "720px" },
+           { src: "imagen/hilados2.png", width: "100%", height: "720px" },
+           { src: "imagen/hilados3.png", width: "100%", height: "720px" },
+           { src: "imagen/hilados3.png", width: "100%", height: "720px" },
+           { src: "imagen/hilados4.png", width: "100%", height: "720px" },
+           { src: "imagen/hilados5.png", width: "100%", height: "720px" },              
+           { src: "imagen/hilados7.png", width: "100%", height: "720px" },
+           { src: "imagen/hilados8.png", width: "100%", height: "720px" },
+           { src: "imagen/hilados9.png", width: "100%", height: "720px" },
+           { src: "imagen/hilados10.png", width: "100%", height: "720px" }
+          
+            ],
+           
+            [
+            { src: "imagen/WEB1.png", width: "100%", height: "720px" },
+            { src: "imagen/WEB11.png", width: "100%", height: "720px" },
+            { src: "imagen/WEB111.png", width: "100%", height: "720px" },
+            { src: "imagen/WEB1111png.png", width: "100%", height: "720px" },
+            { src: "imagen/WEB11111.png", width: "100%", height: "720px" }
+               
+            ],
+            [
+                { src: "imagen/portfolio.png", width: "100%", height: "720px" },
+                { src: "imagen/portfolio1.png", width: "100%", height: "720px" },
+                { src: "imagen/portfolio2.png", width: "100%", height: "720px" },
+                { src: "imagen/portfolio3.png", width: "100%", height: "720px" },
+                { src: "imagen/portfolio4.png", width: "100%", height: "720px" }
+            ],
+          
+            
+        ];
+        let imagenActualPorCard = new Array(cards.length).fill(0);
+        
+        cards.forEach((card, index) => {
+            const img = card.querySelector("img");
+        
+            function actualizarImagen() {
+                const windowWidth = window.innerWidth;
+                const imagenes = imagenesPorCard[index];
+        
+                const imagenActual = imagenActualPorCard[index];
+                img.style.width = windowWidth <= 600 ? "100%" : imagenes[imagenActual].width;
+                img.style.height = windowWidth <= 600 ? "auto" : imagenes[imagenActual].height;
+                img.src = imagenes[imagenActual].src;
+            }
+        
+            card.addEventListener("click", () => {
+                imagenActualPorCard[index] = (imagenActualPorCard[index] + 1) % imagenesPorCard[index].length;
+                actualizarImagen();
+            });
+        
+            window.addEventListener("load", actualizarImagen);
+            window.addEventListener("resize", actualizarImagen);
+        });
+        
+        
+        </script>
+
+    
+        
+<script src="main.js"></script>
+
+    
+   
+    
+</body>
+</html>
+
+
+
+
+
